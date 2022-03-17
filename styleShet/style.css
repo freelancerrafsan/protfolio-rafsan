@@ -1,0 +1,1662 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Jost:wght@200;400&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* mane Content */
+.fastPage {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.BG-slider {
+  display: flex;
+  justify-content: center;
+  width: 300%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  animation: Bg-anymation 35s infinite ease-in-out;
+}
+
+/* image 1/3 */
+.image1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../image/Slider-BG/pic1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.image2 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../image/Slider-BG/pic4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.image3 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../image/Slider-BG/pic3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+/* background animation */
+@keyframes Bg-anymation {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+
+  25% {
+    left: -100%;
+  }
+  35% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+  60% {
+    left: -200%;
+  }
+
+  75% {
+    left: -100%;
+  }
+  85% {
+    left: -100%;
+  }
+}
+
+/* overlay */
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.288);
+  height: 100vh;
+  width: 100%;
+}
+.haderSection {
+  width: 100%;
+  height: 18%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 9999999999;
+  transition: 0.5s;
+}
+.haderSection img {
+  width: 15rem;
+}
+
+/* manu content */
+.nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-bar ul a,
+#mamuli {
+  height: 3.5rem;
+  padding: 0rem 2rem;
+  border-radius: 3rem;
+  margin: 0rem 1rem;
+  text-align: center;
+  line-height: 3.5rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+  background-color: rgba(231, 231, 231, 0.144);
+  backdrop-filter: blur(0.3rem);
+  background: none;
+  box-shadow: -0.1rem -0.1rem 0.1rem rgba(255, 255, 255, 0.127),
+    0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.427);
+}
+.nav-bar ul a::after {
+  content: "";
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  top: 0%;
+  left: -20%;
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.247);
+}
+.nav-bar ul a:hover {
+  transform: scale(1.02);
+}
+.nav-bar ul a:hover::after {
+  left: 120%;
+}
+ion-icon {
+  line-height: 3.5rem;
+  font-size: 1.3rem;
+}
+
+/* midel content */
+.midelCotent {
+  margin-top: 4%;
+  height: 87%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  flex-direction: column;
+}
+.textContent h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+  cursor: default;
+  user-select: none;
+}
+/* text anemaion */
+.typeing {
+  font-family: "Jost", sans-serif;
+  font-size: 2.7rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #d9ff00;
+  user-select: none;
+}
+.textContent h2 {
+  font-family: "Jost", sans-serif;
+  font-size: 2rem;
+  margin: 2rem 0rem 0.2rem;
+  text-transform: capitalize;
+  font-weight: 200;
+  letter-spacing: 0.2rem;
+  cursor: default;
+  color: #fff;
+}
+.textContent p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: rgb(131, 182, 185);
+  cursor: default;
+  user-select: none;
+}
+.midelCotent button {
+  border: none;
+  outline: none;
+  background: none;
+  color: #e4e4e4;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  user-select: none;
+}
+#arroIcons {
+  font-size: 2.2rem;
+  margin-left: 0.5rem;
+  animation: arrpAnemation 1s infinite ease;
+}
+
+@keyframes arrpAnemation {
+  0% {
+    margin-left: 0.5rem;
+  }
+  50% {
+    margin-left: 1.5rem;
+  }
+  100% {
+    margin-left: 0.5rem;
+  }
+}
+
+.aboutIcons i {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #bda523;
+  color: #fff;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.623);
+}
+
+.aboutPage {
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #002333;
+  padding: 3rem 0rem;
+}
+.aboutContent {
+  margin-top: 10%;
+  width: 40%;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(253, 253, 253, 0.493), -0.1rem -0.1rem 0.2rem rgb(0, 0, 0);
+  border-radius: 0.5rem;
+  padding: 2rem 0rem;
+}
+.aboutIcons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutSection {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.aboutIcons i {
+  background-color: #315472;
+}
+.aboutIcons i:nth-child(1) {
+  background-color: #bda523;
+}
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentBox img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 1rem solid #009bdd7a;
+  opacity: 0.8;
+}
+.textHead h1 {
+  width: 100%;
+  letter-spacing: 0.1rem;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  position: relative;
+  cursor: default;
+  text-align: center;
+  padding: 3rem 0rem;
+  color: #fff;
+  user-select: none;
+}
+.textHead h1::after {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #bda523;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.textHead h1::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #bda523;
+  margin-left: -6rem;
+  margin-top: 1rem;
+}
+.aboutSection .rightContent h5 {
+  font-size: 1.7rem;
+  font-family: "Jost", sans-serif;
+  color: #fff;
+  cursor: default;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  user-select: none;
+  text-align: center;
+}
+.aboutSection .rightContent p {
+  font-size: 1.3rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  cursor: default;
+  color: rgb(174, 175, 219);
+  user-select: none;
+  text-align: center;
+}
+.aboutSection .rightContent h6 {
+  font-size: 1.2rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #d3d3d3;
+  cursor: default;
+  user-select: none;
+  text-align: center;
+  width: 70%;
+  margin: 2rem auto;
+}
+.aboutSection .rightContent button {
+  border: none;
+  outline: none;
+  height: 3.5rem;
+  width: 15rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+  background-color: #bda523;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: 0.5s;
+  padding: 0rem 1.2rem;
+  font-weight: 500;
+}
+button .fas {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.aboutSection .rightContent button::after {
+  content: "";
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -3.7rem;
+  transition: 1s;
+  background-color: #ffffff28;
+}
+.aboutSection .rightContent button:hover::after {
+  transform: translateX(18.5rem);
+}
+.aboutSection .rightContent button:hover {
+  box-shadow: none;
+  transform: scale(1.05);
+}
+
+/* location */
+.aboutLocation {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: none;
+}
+/* education */
+.aboutEDUCATIONAL {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: none;
+}
+
+.aboutEDUCATIONAL .contentBox {
+  color: rgb(65, 176, 204);
+  font-size: 1.5rem;
+  margin-top: 5%;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+}
+/* skill */
+.skillPage {
+  height: 70vh;
+  width: 100%;
+  background: #002333;
+  position: relative;
+  font-size: 1.5rem;
+}
+.skillBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+}
+.skilBg {
+  height: 0.4rem;
+  width: 30rem;
+  background: rgb(0, 0, 0);
+  margin: 20%;
+  position: relative;
+}
+
+.skillFont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgb(208, 255, 0), rgb(255, 0, 0));
+  /* animation: anymationSkil 1s ease-in-out; */
+}
+@keyframes anymationSkil {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.skilhtml {
+  width: 90%;
+}
+.skilhtml::after {
+  content: "90%";
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background-color: #bda523;
+  padding: 0rem 0.7rem;
+  font-size: 1.3rem;
+  border-radius: 0.2rem;
+  color: #fff;
+}
+.skilcss {
+  width: 90%;
+}
+.skilcss::after {
+  content: "90%";
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background-color: #bda523;
+  padding: 0rem 0.7rem;
+  font-size: 1.3rem;
+  border-radius: 0.2rem;
+  color: #fff;
+}
+.skiljs {
+  width: 50%;
+}
+.skiljs::after {
+  content: "50%";
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background-color: #bda523;
+  padding: 0rem 0.7rem;
+  font-size: 1.3rem;
+  border-radius: 0.2rem;
+  color: #fff;
+}
+.skilwp {
+  width: 80%;
+}
+.skilwp::after {
+  content: "80%";
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background-color: #bda523;
+  padding: 0rem 0.7rem;
+  font-size: 1.3rem;
+  border-radius: 0.2rem;
+  color: #fff;
+}
+.skilgd {
+  width: 70%;
+}
+.skilgd::after {
+  content: "70%";
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background-color: #bda523;
+  padding: 0rem 0.7rem;
+  font-size: 1.3rem;
+  border-radius: 0.2rem;
+  color: #fff;
+}
+.skilms {
+  width: 90%;
+}
+.skilms::after {
+  content: "90%";
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  background-color: #bda523;
+  padding: 0rem 0.7rem;
+  font-size: 1.3rem;
+  border-radius: 0.2rem;
+  color: #fff;
+}
+.skilBg h6 {
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  top: -2rem;
+  position: relative;
+  left: 0.5rem;
+}
+
+/* customer Review */
+.customerReview {
+  width: 100%;
+  padding: 3rem 0rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: #c4c4c4;
+}
+.customerReview .reviewCard {
+  height: 15rem;
+  width: 20rem;
+  background-color: #ffffff21;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: -0.1rem -0.1rem 0.3rem rgba(0, 0, 0, 0.274),
+    0.2rem 0.2rem 0.3rem rgba(255, 255, 255, 0.63);
+}
+.reviewCard ion-icon,
+.reviewCard i {
+  font-size: 4rem;
+}
+.reviewCard span {
+  font-size: 4rem;
+  font-family: "Jost", sans-serif;
+  color: red;
+  user-select: none;
+}
+.reviewCard h1 {
+  font-size: 1.5rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  user-select: none;
+}
+/* survisePage */
+.survisePage {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: #0b2559;
+  padding-bottom: 5rem;
+}
+
+.Content-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.Content-section .leftSide,
+.Content-section .RightSide {
+  width: 20%;
+  background-color: #002333;
+  text-align: center;
+  padding: 1.3rem;
+  border-radius: 1rem;
+  box-shadow: -0.1rem -0.1rem 0.3rem rgb(0, 0, 0), 0.1rem 0.1rem 0.3rem rgba(255, 255, 255, 0.171);
+}
+.leftSide i,
+.RightSide i {
+  font-size: 5rem;
+  color: #e4e4e4;
+  margin-top: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(19, 19, 19, 0.767);
+}
+.leftSide h1,
+.RightSide h1 {
+  font-size: 2rem;
+  color: #0099dd;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 7%;
+  letter-spacing: 0.1rem;
+  user-select: none;
+}
+.leftSide p,
+.RightSide p {
+  font-size: 1.2rem;
+  color: #577e8f;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-top: 2%;
+  letter-spacing: 0.1rem;
+  user-select: none;
+}
+.leftSide button,
+.RightSide button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #bda523;
+  margin-top: 7%;
+  cursor: pointer;
+  user-select: none;
+}
+.botom {
+  display: none;
+}
+.botom h6 {
+  margin-top: 5%;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #fff;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  user-select: none;
+}
+/* protfolio Page */
+.protfolioPage {
+  height: 126vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #002333;
+  position: relative;
+  overflow: hidden;
+  transition: 0.7s;
+  padding-bottom: 10rem;
+}
+#protScc {
+  height: 5rem;
+  width: 100%;
+  background-color: #002333;
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+  color: #dfdfdf;
+  cursor: pointer;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.protfolioPage .buttonProt {
+  border-radius: 3rem;
+  position: relative;
+  margin-top: 10rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(151, 151, 151, 0.61),
+    -0.1rem -0.1rem 0.2rem rgba(0, 0, 0, 0.438);
+}
+.hoverBtn {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 49.5%;
+  background-image: linear-gradient(to right, rgb(0, 60, 255), rgb(31, 210, 255));
+  z-index: 1;
+  border-radius: 3rem;
+  transition: 0.5s;
+}
+.protfolioPage .buttonProt button {
+  height: 4rem;
+  width: 15rem;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+#webVweBtn,
+#youtubeVideoBTN {
+  color: #fff;
+}
+.sectionProt {
+  width: 60%;
+  margin-top: 7%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 10rem;
+  grid-row-gap: 6rem;
+  justify-items: center;
+}
+.card {
+  width: 20rem;
+  height: 22rem;
+  border-radius: 1rem;
+  padding: 0.3rem 0.3rem;
+  position: relative;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.247), -0.1rem -0.1rem 0.2rem rgb(0, 0, 0);
+}
+.card img {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition: 0.5s;
+}
+.card img:hover {
+  transform: scale(1.7);
+}
+.card h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 5%;
+  margin-left: 1rem;
+  cursor: default;
+  color: #fff;
+}
+.cardbtn {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  width: 100%;
+  justify-content: space-around;
+}
+.cardbtn i {
+  background: #315472;
+  font-size: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  padding-top: 1.3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+  box-shadow: -0.1rem -0.1rem 0.3rem rgb(0, 0, 0), 0.1rem 0.1rem 0.3rem rgba(255, 255, 255, 0.788);
+}
+.cardbtn i:hover {
+  box-shadow: inset -0.1rem -0.1rem 0.3rem rgba(255, 255, 255, 0.342),
+    inset 0.1rem 0.1rem 0.5rem rgb(0, 0, 0);
+  transform: scale(0.95);
+}
+
+.videoPort {
+  width: 60%;
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
+}
+.videoPort iframe {
+  margin-top: 3rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.247), -0.1rem -0.1rem 0.2rem rgb(0, 0, 0);
+  border-radius: 1rem;
+}
+
+/* contrct Page */
+.contrctPage {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.445)),
+    url(../image/Slider-BG/ContrctBG.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  background-attachment: fixed;
+  position: relative;
+  font-size: 1.4rem;
+  overflow: hidden;
+}
+.poppap {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #002333;
+  z-index: 9999999999999999999;
+  color: #fff;
+  box-shadow: 0.2rem 0.2rem 1.5rem rgba(0, 0, 0, 0.589);
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  display: none;
+}
+.poppap h1 {
+  margin-bottom: 10rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.contrctPage button {
+  background: none;
+  width: 5rem;
+  height: 3rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.247), -0.1rem -0.1rem 0.2rem rgb(0, 0, 0);
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  border-radius: 0.5rem;
+}
+.contrctPage button:hover {
+  background-color: #0099dd;
+}
+.contrctPage .content {
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.329);
+  backdrop-filter: blur(0.6rem);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.contrctPage .rightSide {
+  width: 50%;
+  height: 70%;
+}
+form {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.rightSide h1 {
+  margin-top: 3%;
+  font-family: "Fredoka", sans-serif;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  cursor: default;
+  user-select: none;
+}
+.rightSide input {
+  width: 70%;
+  height: 4rem;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.911);
+  border-radius: 1rem;
+  text-transform: capitalize;
+  font-family: "Fredoka", sans-serif;
+  margin-top: 20px;
+}
+.rightSide #subBtn {
+  margin-top: 2rem;
+  width: 70%;
+  height: 4rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.7s;
+  background-color: #fff;
+  text-align: center;
+  line-height: 4rem;
+}
+.rightSide #subBtn:hover {
+  color: #fff;
+  transform: translate(0.3rem);
+}
+.rightSide #subBtn::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #0099dd;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  transition: 0.7s;
+}
+.rightSide #subBtn:hover::after {
+  width: 100%;
+}
+.leftSide {
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+  flex-direction: column;
+  cursor: default;
+  font-family: "Fredoka", sans-serif;
+  color: #fff;
+  user-select: none;
+}
+#Email::placeholder{
+  text-transform: capitalize;
+}
+.Nambar,
+.Email,
+.Location {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.leftSide ion-icon {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #bda523;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 2rem;
+}
+
+#menuIcons {
+  display: none;
+}
+
+@media all and (max-width: 375px) {
+  html {
+    font-size: 30.5% !important;
+  }
+
+  /* manu content */
+
+  #menuIcons {
+    color: #fff;
+    font-size: 20px;
+    display: block;
+  }
+  .nav-bar {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 80px;
+    height: 85vh;
+    display: block !important;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .nav-bar ul li {
+    background: #dfdfdf;
+    width: 150px !important;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+  }
+  .nav-bar ul {
+    display: block;
+    margin-top: 50px;
+  }
+  .nav-bar ul a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0b2559;
+  }
+
+  /* middel Content */
+  .midelCotent {
+    margin-top: 20%;
+  }
+  .textContent h1 {
+    font-size: 1.5rem;
+  }
+  /* text anemaion */
+  .typeing {
+    font-size: 2rem;
+  }
+  .textContent h2 {
+    font-size: 2rem;
+  }
+  .textContent p {
+    font-size: 1rem;
+  }
+  .midelBtn {
+    flex-direction: column;
+  }
+  .midelBtn button {
+    margin-top: 20px;
+  }
+
+  .aboutContent {
+    width: 90%;
+  }
+  .aboutSection .rightContent button {
+    width: 150px;
+  }
+
+  /* skill */
+  .skillPage {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .rightContent {
+    margin-left: 0%;
+  }
+  .skillBar {
+    display: block;
+    margin-top: 70px;
+  }
+  .skilBg {
+    width: 80%;
+    margin: 10%;
+  }
+  .textHead h6::after {
+    left: 56%;
+    width: 10%;
+  }
+  .textHead h6::before {
+    left: 33%;
+    width: 10%;
+  }
+
+  .Content-section {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .Content-section .leftSide,
+  .Content-section .RightSide {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .protfolioPage {
+    height: 136vh;
+  }
+
+  .poppap {
+    width: 50%;
+  }
+
+  .contrctPage {
+    height: auto;
+  }
+  .contrctPage .content {
+    width: 90%;
+    flex-direction: column;
+  }
+  .contrctPage .rightSide {
+    width: 100%;
+  }
+  .rightSide h1 {
+    display: none;
+  }
+  .rightSide input {
+    width: 90%;
+    height: 3.5rem;
+    margin-top: 1.5rem;
+  }
+  .rightSide #subBtn {
+    width: 70%;
+    height: 3.5rem;
+    margin-top: 1rem;
+  }
+  .leftSide {
+    font-size: 10px !important;
+  }
+  .Nambar,
+  .Email,
+  .Location {
+    margin-top: 2rem;
+  }
+  .leftSide ion-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  html {
+    font-size: 50.5% !important;
+  }
+
+  /* manu content */
+
+  #menuIcons {
+    color: #fff;
+    font-size: 25px;
+    display: block;
+  }
+  .nav-bar {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 80px;
+    height: 85vh;
+    display: block !important;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .nav-bar ul li {
+    background: #dfdfdf;
+    width: 100px;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+  }
+  .nav-bar ul {
+    display: block;
+    margin-top: 50px;
+  }
+  .nav-bar ul a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0b2559;
+  }
+
+  /* middel Content */
+  .midelCotent {
+    margin-top: 20%;
+  }
+  .textContent h1 {
+    font-size: 2rem;
+  }
+  /* text anemaion */
+  .typeing {
+    font-size: 2rem;
+  }
+  .textContent h2 {
+    font-size: 2rem;
+  }
+  .textContent p {
+    font-size: 1rem;
+  }
+  .midelBtn {
+    flex-direction: column;
+  }
+  .midelBtn button {
+    margin-top: 20px;
+  }
+
+  .aboutContent {
+    width: 90%;
+  }
+  .aboutSection .rightContent button {
+    width: 150px;
+  }
+
+  /* skill */
+  .skillPage {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .rightContent {
+    margin-left: 0%;
+  }
+  .skillBar {
+    display: block;
+    margin-top: 70px;
+  }
+  .skilBg {
+    width: 80%;
+    margin: 10%;
+  }
+  .textHead h6::after {
+    left: 56%;
+    width: 10%;
+  }
+  .textHead h6::before {
+    left: 33%;
+    width: 10%;
+  }
+
+  .Content-section {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .Content-section .leftSide,
+  .Content-section .RightSide {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .protfolioPage {
+    height: 136vh;
+  }
+
+  .poppap {
+    width: 50%;
+  }
+
+  .contrctPage {
+    height: auto;
+    padding: 20px 0px;
+  }
+  .contrctPage .content {
+    width: 90%;
+    flex-direction: column;
+  }
+  .contrctPage .rightSide {
+    width: 100%;
+  }
+  .rightSide h1 {
+    display: none;
+  }
+  .rightSide input {
+    width: 90%;
+    height: 4rem;
+    margin-top: 1.5rem;
+  }
+  .rightSide #subBtn {
+    width: 70%;
+    height: 3.5rem;
+    margin-top: 1rem;
+  }
+  .leftSide {
+    font-size: 1.3rem;
+  }
+  .Nambar,
+  .Email,
+  .Location {
+    margin-top: 2rem;
+  }
+  .leftSide ion-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 50.5% !important;
+  }
+
+  /* manu content */
+
+  #menuIcons {
+    color: #fff;
+    font-size: 25px;
+    display: block;
+  }
+  .nav-bar {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 80px;
+    height: 85vh;
+    display: block !important;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .nav-bar ul li {
+    background: #dfdfdf;
+    width: 100px;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+  }
+  .nav-bar ul {
+    display: block;
+    margin-top: 50px;
+  }
+  .nav-bar ul a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0b2559;
+  }
+
+  /* middel Content */
+  .midelCotent {
+    margin-top: 10%;
+  }
+  .textContent h1 {
+    font-size: 2rem;
+  }
+  /* text anemaion */
+  .typeing {
+    font-size: 2rem;
+  }
+  .textContent h2 {
+    font-size: 2rem;
+  }
+  .textContent p {
+    font-size: 1rem;
+  }
+  .midelBtn {
+    flex-direction: column;
+  }
+  .midelBtn button {
+    margin-top: 20px;
+  }
+
+  .aboutContent {
+    width: 70%;
+  }
+  .aboutSection .rightContent button {
+    width: 150px;
+  }
+
+  /* skill */
+  .skillPage {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .rightContent {
+    margin-left: 0%;
+  }
+  .skillBar {
+    display: block;
+    margin-top: 70px;
+  }
+  .skilBg {
+    width: 80%;
+    margin: 10%;
+  }
+  .textHead h6::after {
+    left: 56%;
+    width: 10%;
+  }
+  .textHead h6::before {
+    left: 33%;
+    width: 10%;
+  }
+
+  .Content-section {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .Content-section .leftSide,
+  .Content-section .RightSide {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .protfolioPage {
+    height: 136vh;
+  }
+
+  .poppap {
+    width: 50%;
+  }
+
+  .contrctPage {
+    height: auto;
+    padding: 20px 0px;
+  }
+  .contrctPage .content {
+    width: 90%;
+    flex-direction: column;
+  }
+  .contrctPage .rightSide {
+    width: 100%;
+  }
+  .rightSide h1 {
+    display: none;
+  }
+  .rightSide input {
+    width: 90%;
+    height: 4rem;
+    margin-top: 1.5rem;
+  }
+  .rightSide #subBtn {
+    width: 70%;
+    height: 3.5rem;
+    margin-top: 1rem;
+  }
+  .leftSide {
+    font-size: 1.3rem;
+  }
+  .Nambar,
+  .Email,
+  .Location {
+    margin-top: 2rem;
+  }
+  .leftSide ion-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 900px) {
+  html {
+    font-size: 50.5% !important;
+  }
+
+  /* manu content */
+
+  #menuIcons {
+    color: #fff;
+    font-size: 25px;
+    display: block;
+  }
+  .nav-bar {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 80px;
+    height: 85vh;
+    display: block !important;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .nav-bar ul li {
+    background: #dfdfdf;
+    width: 100px;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+  }
+  .nav-bar ul {
+    display: block;
+    margin-top: 50px;
+  }
+  .nav-bar ul a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0b2559;
+  }
+
+  /* middel Content */
+  .midelCotent {
+    margin-top: 10%;
+  }
+  .textContent h1 {
+    font-size: 2rem;
+  }
+  /* text anemaion */
+  .typeing {
+    font-size: 2rem;
+  }
+  .textContent h2 {
+    font-size: 2rem;
+  }
+  .textContent p {
+    font-size: 1rem;
+  }
+  .midelBtn {
+    flex-direction: column;
+  }
+  .midelBtn button {
+    margin-top: 20px;
+  }
+
+  .aboutContent {
+    width: 70%;
+  }
+  .aboutSection .rightContent button {
+    width: 150px;
+  }
+
+  /* skill */
+  .skillPage {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .rightContent {
+    margin-left: 0%;
+  }
+  .skillBar {
+    display: block;
+    margin-top: 70px;
+  }
+  .skilBg {
+    width: 80%;
+    margin: 10%;
+  }
+  .textHead h6::after {
+    left: 56%;
+    width: 10%;
+  }
+  .textHead h6::before {
+    left: 33%;
+    width: 10%;
+  }
+
+  .Content-section {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .Content-section .leftSide,
+  .Content-section .RightSide {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .protfolioPage {
+    height: 136vh;
+  }
+
+  .poppap {
+    width: 50%;
+  }
+
+  .contrctPage {
+    height: auto;
+    padding: 20px 0px;
+  }
+  .contrctPage .content {
+    width: 90%;
+    padding: 20px 20px;
+  }
+  .contrctPage .rightSide {
+    width: 100%;
+  }
+  .rightSide h1 {
+    display: none;
+  }
+  .rightSide input {
+    width: 90%;
+    height: 4rem;
+    margin-top: 1.5rem;
+  }
+  .rightSide #subBtn {
+    width: 70%;
+    height: 3.5rem;
+    margin-top: 1rem;
+  }
+  .leftSide {
+    font-size: 1.3rem;
+  }
+  .Nambar,
+  .Email,
+  .Location {
+    margin-top: 2rem;
+  }
+  .leftSide ion-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  html {
+    font-size: 55.5% !important;
+  }
+  .contrctPage .content {
+    width: 80%;
+    padding: 20px 20px;
+  }
+}
+
+@media all and (max-width: 1366px) {
+  html {
+    font-size: 62.5% !important;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  html {
+    font-size: 62.5% !important;
+  }
+}
