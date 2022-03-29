@@ -1,12 +1,3 @@
-const aboutBtn = document.getElementById("aboutBtn");
-const aboutSection = document.getElementById("aboutSection");
-const aboutLocation = document.getElementById("aboutLocation");
-const locationBtn = document.getElementById("locationBtn");
-const aboutEDUCATIONAL = document.getElementById("aboutEDUCATIONAL");
-const educationBtn = document.getElementById("educationBtn");
-const totelProject = document.getElementById("totel-Project");
-const customerHappy = document.getElementById("customerHappy");
-const customerSatisfaction = document.getElementById("customerSatisfaction");
 const seeMoreleft = document.getElementById("seeMoreleft");
 const seeMoreright = document.getElementById("seeMoreright");
 const weblists = document.getElementById("weblist");
@@ -42,41 +33,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 1250) {
-    setInterval(project, 15);
-    setInterval(Happy, 100);
-    setInterval(customeR, 100);
-  } else {
-    clearInterval(project);
-    clearInterval(Happy);
-    clearInterval(customeR);
-  }
-});
-
-var i = 0;
-function project() {
-  if (i < 1000) {
-    i++;
-    totelProject.innerHTML = i;
-  } else if (i == 1000) {
-    totelProject.innerHTML = "1K";
-  }
-}
-
-function Happy() {
-  if (i < 100) {
-    i++;
-    customerHappy.innerHTML = i + "%";
-  }
-}
-
-function customeR() {
-  if (i < 100) {
-    i++;
-    customerSatisfaction.innerHTML = i + "%";
-  }
-}
 
 let isManu = false;
 menuIcons.addEventListener("click", () => {
@@ -139,14 +95,16 @@ const subBtnFun = () => {
 subBtn.addEventListener("click", subBtnFun);
 closePop.addEventListener("click", closePopFun);
 
-protfolioPage.style.height = "126vh";
+let isprotfolioPage = false;
 const protseeFun = () => {
-  if (protfolioPage.style.height == "126vh") {
+  if (isprotfolioPage == false) {
     protfolioPage.style.height = "auto";
     protScc.innerHTML = "scc lend...";
+    isprotfolioPage = true;
   } else {
     protfolioPage.style.height = "126vh";
     protScc.innerHTML = "scc more...";
+    isprotfolioPage = false;
   }
 };
 
@@ -171,52 +129,27 @@ const videoyoutube = () => {
 youtubeVideoBTN.addEventListener("click", videoyoutube);
 webVweBtn.addEventListener("click", webVwe);
 
-weblists.style.display = "none";
+// SURVISE section
+let isweblists = false;
 const webrlistFun = () => {
-  if (weblists.style.display == "none") {
+  if (isweblists == false) {
     weblists.style.display = "block";
+    isweblists = true;
   } else {
     weblists.style.display = "none";
+    isweblists = false;
   }
 };
 
-designList.style.display = "none";
+let isdesignList = false;
 const desigrnlistFun = () => {
-  if (designList.style.display == "none") {
+  if (isdesignList === false) {
     designList.style.display = "block";
+    isdesignList = true;
   } else {
     designList.style.display = "none";
+    isdesignList = false;
   }
 };
-
 seeMoreleft.addEventListener("click", webrlistFun);
 seeMoreright.addEventListener("click", desigrnlistFun);
-
-const aboutBtnFun = () => {
-  aboutBtn.style.background = "#c28f2f";
-  aboutLocation.style.display = "none";
-  aboutEDUCATIONAL.style.display = "none";
-  educationBtn.style.background = "#315472";
-  locationBtn.style.background = "#315472";
-  aboutSection.style.display = "flex";
-};
-const locationBtnFun = () => {
-  aboutBtn.style.background = "#315472";
-  aboutLocation.style.display = "block";
-  aboutEDUCATIONAL.style.display = "none";
-  educationBtn.style.background = "#315472";
-  locationBtn.style.background = "#c28f2f";
-  aboutSection.style.display = "none";
-};
-const educationBtnfin = () => {
-  aboutBtn.style.background = "#315472";
-  aboutLocation.style.display = "none";
-  aboutEDUCATIONAL.style.display = "block";
-  educationBtn.style.background = "#c28f2f";
-  locationBtn.style.background = "#315472";
-  aboutSection.style.display = "none";
-};
-
-educationBtn.addEventListener("click", educationBtnfin);
-locationBtn.addEventListener("click", locationBtnFun);
-aboutBtn.addEventListener("click", aboutBtnFun);
