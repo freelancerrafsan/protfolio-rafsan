@@ -326,6 +326,7 @@ ion-icon {
   flex-direction: column;
   box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.63), 2px 2px 3px #fff;
   border-radius: 10px;
+  margin-left: 50px;
 }
 .cardSection img {
   user-select: none;
@@ -658,7 +659,7 @@ ion-icon {
   top: 0%;
   left: 0%;
   height: 100%;
-  width: 50%;
+  width: 33.33%;
   background-image: linear-gradient(to right, rgb(0, 60, 255), rgb(31, 210, 255));
   z-index: 1;
   border-radius: 3rem;
@@ -681,8 +682,10 @@ ion-icon {
   text-transform: uppercase;
 }
 #webVweBtn,
-#youtubeVideoBTN {
+#youtubeVideoBTN,#wordpressBtn {
   color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
 }
 .sectionProt {
   width: 60%;
@@ -756,6 +759,14 @@ ion-icon {
   align-items: center;
   flex-wrap: wrap;
   display: none;
+}
+.wordpressVideo{
+  width: 60%;
+  margin-top: 7%;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .videoPort iframe {
   margin-top: 3rem;
@@ -996,8 +1007,8 @@ form {
     position: absolute;
     width: 100%;
     background: #fff;
-    top: 80px;
-    height: 85vh;
+    top: 90px !important;
+    height: 90vh !important;
     display: block !important;
     transform: translateX(100%);
     transition: 0.5s;
