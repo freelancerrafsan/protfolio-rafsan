@@ -4,6 +4,7 @@ const weblists = document.getElementById("weblist");
 const designList = document.getElementById("designlist");
 const webVweBtn = document.getElementById("webVweBtn");
 const youtubeVideoBTN = document.getElementById("youtubeVideoBTN");
+const wordpressBtn = document.getElementById("wordpressBtn");
 const protScc = document.getElementById("protScc");
 const protfolioPage = document.getElementById("protfolioPage");
 const Fullname = document.getElementById("Fullname");
@@ -20,6 +21,7 @@ const navBar = document.querySelector(".nav-bar");
 const mamuli = document.querySelectorAll("#mamuli");
 const skillFont = document.querySelectorAll("#skillFont");
 const preloder = document.getElementById("preloder");
+const wordpressVideo = document.getElementById("wordpressVideo");
 
 window.addEventListener("load", () => {
   preloder.style.display = "none";
@@ -115,19 +117,31 @@ const webVwe = () => {
   videoPort.style.display = "none";
   hoverBtn.style.left = "0";
   webVweBtn.style.color = "#fff";
+  wordpressVideo.style.display = "none";
   youtubeVideoBTN.style.color = "#fff";
 };
 
 const videoyoutube = () => {
   sectionProt.style.display = "none";
-  hoverBtn.style.left = "50%";
+  hoverBtn.style.left = "33.33%";
   videoPort.style.display = "flex";
+  webVweBtn.style.color = "#fff";
+  wordpressVideo.style.display = "none";
+  youtubeVideoBTN.style.color = "#fff";
+};
+
+const wordpress_Video = () => {
+  sectionProt.style.display = "none";
+  hoverBtn.style.left = "66.66%";
+  videoPort.style.display = "none";
+  wordpressVideo.style.display = "flex";
   webVweBtn.style.color = "#fff";
   youtubeVideoBTN.style.color = "#fff";
 };
 
 youtubeVideoBTN.addEventListener("click", videoyoutube);
 webVweBtn.addEventListener("click", webVwe);
+wordpressBtn.addEventListener("click", wordpress_Video);
 
 // SURVISE section
 let isweblists = false;
